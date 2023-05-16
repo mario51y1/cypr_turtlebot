@@ -50,6 +50,7 @@ def callback_image(image_raw):
     bridge = CvBridge()
     try:
         print(estado)
+        
         if estado == 40:
             print("dentro")
             image = bridge.imgmsg_to_cv2(image_raw,"passthrough")
