@@ -55,7 +55,7 @@ def listener():
     print(rospack.get_path('chill_topic'))
 #    logo_raw = cv2.imread('/home/juancangaritan/Documents/MasterAR/Controlyprog/logo_hmi_corregido.png',cv2.IMREAD_UNCHANGED)
 
-    logo_raw = cv2.imread(rospack.get_path('chill_topic') + '/resources/logo.jpeg',cv2.IMREAD_UNCHANGED)
+    logo_raw = cv2.imread(rospack.get_path('chill_topic') + '/resources/logo_hmi_corregido.png',cv2.IMREAD_UNCHANGED)
     ancho, alto, canales = logo_raw.shape
     ancho = int(ancho/1.8)
     alto = int(alto/1.8)
